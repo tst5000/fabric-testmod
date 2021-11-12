@@ -9,7 +9,7 @@ import net.minecraft.util.registry.Registry;
 
 public class ModItems {
 
-    public static Item TESTITEM = registerItem("testitem", new Item(new FabricItemSettings().group(ItemGroup.MISC)));
+    public static final Item TEST_ITEM = registerItem("testitem", new Item(new FabricItemSettings().group(ItemGroup.MISC)));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registry.ITEM, new Identifier(TestMod.MOD_ID, name), item);
